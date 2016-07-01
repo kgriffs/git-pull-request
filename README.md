@@ -25,7 +25,7 @@ Options
         Display this message and exit
 
     -r <repo>, --repo <repo>
-        Use this github repo instead of the 'remote origin' or 'github.repo'
+        Use this github repo instead of the 'remote upstream' or 'github.repo'
         git config settings. Needs to be in "user/repository" form
 
 License

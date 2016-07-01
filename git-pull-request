@@ -14,7 +14,7 @@ Options:
         Display this message and exit
 
     -r <repo>, --repo <repo>
-        Use this github repo instead of the 'remote origin' or 'github.repo'
+        Use this github repo instead of the 'remote upstream' or 'github.repo'
         git config settings. Needs to be in "user/repository" form
 
 Copyright (C) 2011 by Andreas Gohr <andi@splitbrain.org>
@@ -67,7 +67,7 @@ def main():
                 remote = a
 
     if remote is None and repo == '':
-        remote = 'origin'
+        remote = 'upstream'
 
     # attempt to get token from git config
     token = os.popen("git config --get github.token").read().rstrip()
